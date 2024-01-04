@@ -24,11 +24,15 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -132,6 +136,9 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
+
+
+
     <!-- Features -->
     <div id="features" class="cards-1">
         <div class="container">
@@ -141,83 +148,107 @@
                     <p class="p-heading">¿Por qué elegirnos?</p>
                 </div> <!-- end of div -->
             </div> <!-- end of row -->
+
             <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-cerrajeria.svg" alt="cerrajeria">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cerrajería</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
-                        </div>
+                <!-- Filtros de Categorías -->
+                <div class="col-md-12 mb-3">
+                    <div class="row justify-content-center">
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="todos">Todos</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="cerrajeria">Cerrajería</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="celular">Telefonía Celular</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="smarthome">Smart Home</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="airbnb">Mantenimiento Airbnb</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="controlacceso">Control de Acceso</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-filter="camara">Cámaras de Vigilancia</a>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-smartphone.svg" alt="smartphone">
+                </div>
+
+                <!-- Lista de Trabajos -->
+                <div class="col-md-12">
+                    <div class="row" id="lista-trabajos">
+                        <div class="col-md-6">
+                            <div class="trabajo cerrajeria">Apertura de Cerraduras Domiciliarias</div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Telefonía Celular</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
+                        <div class="col-md-6">
+                            <div class="trabajo cerrajeria">Apertura de Cerraduras de Empresas y comercios</div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="trabajo cerrajeria">Apertura de Cerradura de vehículos</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo cerrajeria">Apertura de Mail box</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo cerrajeria">Instalación de cerraduras inteligentes</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo controlacceso">Instalación de Control de Acceso</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo camara">Instalación de Cámaras de Seguridad</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo celular">Smartphones: Cambio de pantalla</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo celular">Smartphones: Cambio de batería</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo celular">Smartphones: Limpieza y cambio de puerto de carga</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo celular">Smartphones: Cambio de Vidrio trasero</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo smarthome">Todo tipo de instalaciones de soportes</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo smarthome">Automatización del sistema de riego sin cambiar los sistemas
+                                existentes, agregando pequeño dispositivo electrónico</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo smarthome">Automatización de la iluminación sin cambiar los sistemas
+                                existentes, agregando pequeño dispositivo electrónico</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo smarthome">Automatización de portones sin cambiar los sistemas
+                                existentes agregando pequeño dispositivo electrónico</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="trabajo smarthome">Automatización de filtro de pileta sin cambiar los sistemas
+                                existentes agregando pequeño dispositivo electrónico</div>
+                        </div>
+                       
+                        <div class="col-md-6">
+                            <div class="trabajo airbnb">Mantenimientos departamentos Airbnb</div>
+                        </div>
+
+                        <!-- Agrega más trabajos según sea necesario -->
                     </div>
-                    <!-- end of card -->
+                </div>
+            </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-accesscard.svg" alt="access-card">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Controles de Acceso</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-camera.svg" alt="camera">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cámaras de Vigilancia</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+            <script>
+                $(document).ready(function () {
+                    // Filtrar por Categoría
+                    $(".list-group-item").click(function (event) {
+                        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-airbnb.svg" alt="airbnb">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mantenimiento Dptos Airbnb</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+                        var filtro = $(this).data('filter');
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/icon-smarthouse.svg" alt="smarthose">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Inteligencia y Automatización hogar</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis elit, fringilla in leo id.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+                        if (filtro === 'todos') {
+                            $(".trabajo").show();
+                        } else {
+                            $(".trabajo").hide();
+                            $("." + filtro).show();
+                        }
+                    });
+                });
+            </script>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of features -->
@@ -246,7 +277,7 @@
                                         </div>
                                     </div> <!-- end of swiper-slide -->
                                     <!-- end of slide -->
-                                    
+
                                     <!-- Slide -->
                                     <div class="swiper-slide">
                                         <div class="card">

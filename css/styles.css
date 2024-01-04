@@ -42,6 +42,7 @@ h1 {
   font-size: 2.5rem;
   line-height: 3.25rem;
   letter-spacing: -0.2px;
+  color: white;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h2 {
   font-size: 2.125rem;
   line-height: 2.625rem;
   letter-spacing: -0.2px;
+  color: white;
 }
 
 h3 {
@@ -585,7 +587,7 @@ input[type="checkbox"] {
 }
 
 #header form {
-	width: 60%;
+  width: 60%;
 }
 
 #header .form-control {
@@ -627,12 +629,73 @@ input[type="checkbox"] {
   max-width: 600px;
 }
 
+@media (max-width: 768px) {
+  #header .bg-img {
+    display: none;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  #header h1 {
+    font-size: 1.5rem;
+  }
+
+  #header h2 {
+    font-size: 1.3rem;
+  }
+
+  .main-form {
+    margin: 0 auto;
+  }
+  
+}
+
 /********************/
 /*     Features     */
 /********************/
 
 #features {
   background-color: black;
+}
+
+#features .trabajo {
+  color: white;
+  border: 3px solid #3fae79;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #001f3f;
+  font-weight: 600;
+  color: white;
+}
+
+#features .list-group-item-action {
+  width: inherit;
+  background: #3fae79;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 0.25rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#features .card-service {
+  background-color: #001f3f;
+  color: #3fae79;
+  padding: 10px;
+  font-weight: 800;
+  border-radius: 0.25rem;
+}
+
+#features .card-service img {
+  filter: invert(53%) sepia(78%) saturate(318%) hue-rotate(99deg)
+    brightness(95%) contrast(89%);
+  width: 40px;
+  margin-right: 10px;
 }
 
 .cards-1 {
@@ -659,7 +722,8 @@ input[type="checkbox"] {
 
 .cards-1 .card-image img {
   max-height: 50px;
-  filter: invert(53%) sepia(78%) saturate(318%) hue-rotate(99deg) brightness(95%) contrast(89%);
+  filter: invert(53%) sepia(78%) saturate(318%) hue-rotate(99deg)
+    brightness(95%) contrast(89%);
 }
 
 .cards-1 .fas {
@@ -1055,13 +1119,14 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-.slider-1 .testimonial-text, .slider-1 .testimonial-author {
+.slider-1 .testimonial-text,
+.slider-1 .testimonial-author {
   color: #ffffff;
 }
 
 .slider-1 .testimonial-stars {
-	color: #3fae79;
-  }
+  color: #3fae79;
+}
 
 .slider-1 .testimonial-author {
   margin-bottom: 0;
